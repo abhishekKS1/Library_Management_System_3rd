@@ -14,6 +14,7 @@ app.use(cookieParser());
 app.use(
    cors({
       origin: "https://library-management-system-3rd.vercel.app",
+      credentials: true,
    })
 );
 
