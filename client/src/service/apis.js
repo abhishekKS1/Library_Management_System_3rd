@@ -1,4 +1,4 @@
-const baseURL = `/api/v1`;
+const baseURL = `https://library-management-system-3rd.vercel.app/api/v1`;
 // const baseURL = `${import.meta.env.VITE_BASE_URL}/api/v1`;
 
 export const endpoints = {
