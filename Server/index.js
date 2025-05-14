@@ -12,16 +12,16 @@ dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 app.use(
-  cors({
-    origin: "*",
-  })
+   cors({
+      origin: "https://library-management-system-3rd.vercel.app",
+   })
 );
 
 app.use(
-  fileUpload({
-    useTempFiles: true,
-    tempFileDir: "tmp",
-  })
+   fileUpload({
+      useTempFiles: true,
+      tempFileDir: "tmp",
+   })
 );
 
 //routes
@@ -42,5 +42,5 @@ cloudinaryConnect();
 //server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+   console.log(`Server is running on port ${PORT}`);
 });
